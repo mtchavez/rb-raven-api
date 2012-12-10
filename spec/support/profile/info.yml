@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.raventools.com/api?format=json&key=test-key&method=profile_info
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 10 Dec 2012 23:03:08 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.14 (Ubuntu)
+      Set-Cookie:
+      - PHPSESSID=k8f7skr0l0i42m73ibn1hg0f23; expires=Wed, 09-Jan-2013 23:03:08 GMT;
+        path=/
+      - auth_hash=c026db9ef182a82c9e4ae9236e4a2ddfbb897a2d; expires=Wed, 09-Jan-2013
+        23:03:08 GMT; path=/
+      - auth_username=brianlafrance%40gmail.com; expires=Wed, 09-Jan-2013 23:03:08
+        GMT; path=/
+      X-Powered-By:
+      - PHP/5.3.2-1ubuntu4.7
+      Content-Length:
+      - '39'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"name":"TwoGun","keyword_usage":"134"}'
+    http_version: 
+  recorded_at: Mon, 10 Dec 2012 23:03:10 GMT
+recorded_with: VCR 2.3.0
