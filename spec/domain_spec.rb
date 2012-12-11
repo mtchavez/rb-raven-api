@@ -92,4 +92,26 @@ describe Raven::Domain do
 
   end
 
+  describe 'info' do
+
+    use_vcr_cassette 'domain/info', :record => :none
+
+    before do
+      @res = Raven::Domain.info domain
+    end
+
+    it 'returns response results' do
+      @res.should be_success
+      @res.body.should_not be_nil
+      @res.code.should eql 200
+      @res.params.should be_nil
+      @res.path.should eql '?method=domain_info&domain=test-domain.com&key=test-key&format=json'
+    end
+
+    it 'returns hash of engine locales with ids for domain' do
+      @res.parsed_body.should eql [{ 'id' => '1', 'name' => 'Google' }, { 'id' => '2', 'name' => 'Yahoo!' },{ 'id' => '3', 'name' => 'Bing' }]
+    end
+
+  end
+
 end

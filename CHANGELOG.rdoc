@@ -1,0 +1,16 @@
+== 0.0.2
+
+* Raven::Domain#info
+
+== 0.0.1
+
+* Raven
+* Raven::Domain
+  * Raven::Domain#all
+  * Raven::Domain#add
+  * Raven::Domain#keywords
+  * Raven::Domain#keywords_with_tags
+* Raven::Engines
+  * Raven::Engines#all [Not Working, Redirecting to login]
+* Raven::Profile
+  * Raven::Profile#info

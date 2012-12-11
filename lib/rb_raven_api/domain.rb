@@ -43,6 +43,16 @@ module Raven
       Raven.http.get '', { method: 'keywords_tags', domain: domain }
     end
 
+    ##
+    # This request will return the search engines for the domain provided.
+    #
+    # @param domain [String] *Required* The domain name you want info for. _Must match exactly_
+    #
+
+    def self.info domain
+      Raven.http.get '', { method: 'domain_info', domain: domain }
+    end
+
   end
 
 end

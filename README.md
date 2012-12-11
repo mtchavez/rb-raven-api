@@ -103,6 +103,14 @@ Example response in JSON
       }
     ]
 
+### Domain Info
+
+This request will return the search engines for the domain provided.
+
+    Raven::Domain.info 'poop-chute.com'
+
+
+
 ## Keywords
 
 Keywords endpoint allows you to create and add keywords to a domain.
