@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name             = 'rb_raven_api'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.date             = '2012-12-19'
   s.summary          = 'RavenTools API'
   s.description      = 'Wraps RavenTools API calls in a gem.'
