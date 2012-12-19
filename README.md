@@ -66,6 +66,20 @@ Example response in JSON
       "response":"success"
     }
 
+## Competitors
+
+Competitors endpoint to get your tracked competitors for a domain.
+
+### For Domain
+
+This request will return the available competitors for the domain provided.
+
+    Raven::Competitors.for_domain 'poop-chute.com'
+
+Example response in JSON
+
+    ["poopers.com", "daily-fiber.com", "metamucil.com"]
+
 ### Keywords
 
 This request will return the available keywords for the domain provided.
@@ -109,7 +123,13 @@ This request will return the search engines for the domain provided.
 
     Raven::Domain.info 'poop-chute.com'
 
+Example response in JSON
 
+    [
+      {"id":"1","name":"Google"},
+      {"id":"2","name":"Yahoo!"},
+      {"id":"3","name":"Bing"}
+    ]
 
 ## Keywords
 
@@ -138,6 +158,31 @@ Example response in JSON
     {
       "response":"success"
     }
+
+## Engines
+
+Engines endpoint to get all the supported Raven engines.
+
+## All
+
+This request will return the available search engines for tracking keywords, to be used when adding or modifying domains.
+
+    Raven::Engines.all
+
+Example response in JSON
+
+    [
+      {"id":"93","name":"Yahoo! GR"},
+      {"id":"94","name":"Bing NL"},
+      {"id":"95","name":"Bing FR"},
+      {"id":"96","name":"Yahoo FR"},
+      {"id":"97","name":"Google LT"},
+      {"id":"98","name":"Bing BE"},
+      {"...":"..."},
+      {"id":"1","name":"Google"},
+      {"id":"2","name":"Yahoo!"},
+      {"id":"3","name":"Bing"}
+    ]
 
 ## License
 

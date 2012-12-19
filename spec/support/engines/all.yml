@@ -1,0 +1,125 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.raventools.com/api?format=json&key=test-key&method=engines
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 19 Dec 2012 17:56:28 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.14 (Ubuntu)
+      Set-Cookie:
+      - PHPSESSID=04k3qtdmfob9rgvcbgms2tqel3; expires=Fri, 18-Jan-2013 17:56:28 GMT;
+        path=/
+      - auth_hash=c026db9ef182a82c9e4ae9236e4a2ddfbb897a2d; expires=Fri, 18-Jan-2013
+        17:56:28 GMT; path=/
+      - auth_username=brianlafrance%40gmail.com; expires=Fri, 18-Jan-2013 17:56:28
+        GMT; path=/
+      X-Powered-By:
+      - PHP/5.3.2-1ubuntu4.7
+      Content-Length:
+      - '7813'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":"93","name":"Yahoo! GR","al_locale":"el-GR"},{"id":"94","name":"Bing
+        NL","al_locale":"nl-NL"},{"id":"95","name":"Bing FR","al_locale":"fr-FR"},{"id":"96","name":"Yahoo
+        FR","al_locale":"fr-FR"},{"id":"97","name":"Google LT","al_locale":"lt-LT"},{"id":"98","name":"Bing
+        BE","al_locale":"nl-BE"},{"id":"99","name":"Google CH (English)","al_locale":"en-CH"},{"id":"100","name":"Google
+        CH (Rumantsch)","al_locale":"rm-CH"},{"id":"101","name":"Google HU","al_locale":"hu-HU"},{"id":"102","name":"Yahoo!
+        BR","al_locale":"pt-BR"},{"id":"103","name":"Bing BR","al_locale":"pt-BR"},{"id":"115","name":"Google
+        CO","al_locale":"es-CO"},{"id":"116","name":"Google TN","al_locale":"ar-tn"},{"id":"117","name":"Google
+        QA","al_locale":"ar-qa"},{"id":"118","name":"Google QA","al_locale":"en-qa"},{"id":"119","name":"Yahoo
+        MY","al_locale":"en-my"},{"id":"120","name":"Google BK","al_locale":"en-bk"},{"id":"121","name":"Google
+        JO","al_locale":"ar-jo"},{"id":"122","name":"Google IS","al_locale":"is-is"},{"id":"123","name":"Bing
+        DK","al_locale":"da-dk"},{"id":"124","name":"Yahoo DK","al_locale":"da-dk"},{"id":"125","name":"Google
+        TW","al_locale":"en-tw"},{"id":"126","name":"Google CN","al_locale":"zh-cn-tw"},{"id":"127","name":"Google
+        TW","al_locale":"zh-tw-tw"},{"id":"130","name":"Google AE","al_locale":"en-ae"},{"id":"131","name":"Google
+        MT","al_locale":"en-mt"},{"id":"132","name":"Google MT","al_locale":"mt-mt"},{"id":"133","name":"Google
+        BH","al_locale":"ar-bh"},{"id":"134","name":"Google BH","al_locale":"en-bh"},{"id":"135","name":"Google
+        NG","al_locale":"ig-ng"},{"id":"136","name":"Google NG","al_locale":"yo-ng"},{"id":"137","name":"Google
+        NG","al_locale":"en-ng"},{"id":"138","name":"Google NG","al_locale":"ha-ng"},{"id":"139","name":"Google
+        EC","al_locale":"es-ec"},{"id":"140","name":"Google CR","al_locale":"es-cr"},{"id":"141","name":"Google
+        UY","al_locale":"es-uy"},{"id":"142","name":"Yahoo CN","al_locale":"zh-cn-tw"},{"id":"143","name":"Yahoo
+        TW","al_locale":"en-tw"},{"id":"144","name":"Google LU","al_locale":"de-lu"},{"id":"145","name":"Google
+        OM","al_locale":"om-AR"},{"id":"146","name":"Google KW","al_locale":"ar-KW"},{"id":"147","name":"Google
+        LV","al_locale":"lt-LV"},{"id":"148","name":"Google MU","al_locale":"en-MU"},{"id":"149","name":"Google
+        MG","al_locale":"mg-MG"},{"id":"150","name":"Google MA","al_locale":"fr-MA"},{"id":"151","name":"Google
+        PA","al_locale":"es-PA"},{"id":"152","name":"Google PE","al_locale":"es-PE"},{"id":"153","name":"Google
+        PY","al_locale":"es-PY"},{"id":"154","name":"Google VE","al_locale":"es-VE"},{"id":"155","name":"Bing
+        NZ","al_locale":"en-NZ"},{"id":"1","name":"Google","al_locale":"en-US"},{"id":"2","name":"Yahoo!","al_locale":"en-US"},{"id":"3","name":"Bing","al_locale":"en-US"},{"id":"4","name":"Google
+        UK","al_locale":"en-UK"},{"id":"23","name":"Google UK (UK only)","al_locale":"en-UK"},{"id":"5","name":"Google
+        AU","al_locale":"en-AU"},{"id":"32","name":"Google AU (AU only)","al_locale":"en-AU"},{"id":"6","name":"Google
+        CA","al_locale":"en-CA"},{"id":"33","name":"Google CA (CA only)","al_locale":"en-CA"},{"id":"62","name":"Google
+        CA (french)","al_locale":"fr-CA"},{"id":"10","name":"Google DK","al_locale":"da-DK"},{"id":"11","name":"Google
+        DE","al_locale":"de-DE"},{"id":"12","name":"Google NO","al_locale":"no-NO"},{"id":"13","name":"Google
+        SE","al_locale":"sv-SE"},{"id":"14","name":"Google PL","al_locale":"pl-PL"},{"id":"15","name":"Google
+        FI","al_locale":"fi-FL"},{"id":"16","name":"Google FR","al_locale":"fr-FR"},{"id":"17","name":"Google
+        ES","al_locale":"es-ES"},{"id":"18","name":"Google NL","al_locale":"nl-NL"},{"id":"19","name":"Google
+        BR","al_locale":"pt-BR"},{"id":"20","name":"Google CH","al_locale":"de-CH"},{"id":"63","name":"Google
+        CH (french)","al_locale":"fr-CH"},{"id":"74","name":"Google CH (Italian)","al_locale":"it-CH"},{"id":"21","name":"Google
+        IT","al_locale":"it-IT"},{"id":"22","name":"Google PR","al_locale":"es-PR"},{"id":"24","name":"Google
+        MY","al_locale":"en-MY"},{"id":"25","name":"Google NZ","al_locale":"en-NZ"},{"id":"41","name":"Google
+        NZ (NZ only)","al_locale":"en-NZ"},{"id":"26","name":"Google SG","al_locale":"en-SG"},{"id":"27","name":"Google
+        GR","al_locale":"el-GR"},{"id":"28","name":"Google ZA","al_locale":"en-ZA"},{"id":"29","name":"Google
+        ZA (ZA only)","al_locale":"en-ZA"},{"id":"30","name":"Google SI","al_locale":"sl-SI"},{"id":"34","name":"Google
+        IE","al_locale":"en-IE"},{"id":"36","name":"Google CN","al_locale":"zh-CN-HK"},{"id":"37","name":"Google
+        HK","al_locale":"zh-HK-HK"},{"id":"38","name":"Google PT","al_locale":"pt-PT"},{"id":"39","name":"Google
+        JP","al_locale":"ja-JP"},{"id":"40","name":"Google AT","al_locale":"de-AT"},{"id":"42","name":"Google
+        IN","al_locale":"en-IN"},{"id":"44","name":"Google CZ","al_locale":"cs-CZ"},{"id":"45","name":"Google
+        SK","al_locale":"sk-SK"},{"id":"46","name":"Google RS","al_locale":"sr-RS"},{"id":"48","name":"Google
+        RU","al_locale":"ru-RU"},{"id":"49","name":"Google BE","al_locale":"nl-BE"},{"id":"61","name":"Google
+        BE (french)","al_locale":"fr-BE"},{"id":"64","name":"Google RO","al_locale":"ro-RO"},{"id":"66","name":"Google
+        TH","al_locale":"th-TH"},{"id":"69","name":"Google LV","al_locale":"lv-LV"},{"id":"7","name":"Yahoo!
+        CA","al_locale":"en-CA"},{"id":"72","name":"Google EE","al_locale":"et-EE"},{"id":"8","name":"Yahoo!
+        UK","al_locale":"en-UK"},{"id":"73","name":"Google IL","al_locale":"he-IL"},{"id":"76","name":"Google
+        MX","al_locale":"es-MX"},{"id":"79","name":"Google AE","al_locale":"ar-AE"},{"id":"80","name":"Google
+        PH","al_locale":"tl-PH"},{"id":"81","name":"Google AR","al_locale":"es-AR"},{"id":"83","name":"Google
+        HR","al_locale":"hr-HR"},{"id":"84","name":"Google TR","al_locale":"tr-TR"},{"id":"85","name":"Google
+        BG","al_locale":"bg-BG"},{"id":"86","name":"Google UA","al_locale":"uk-UA"},{"id":"89","name":"Google
+        BE (English)","al_locale":"en-BE"},{"id":"90","name":"Google VN","al_locale":"vi-VN"},{"id":"9","name":"Yahoo!
+        AU","al_locale":"en-AU"},{"id":"31","name":"Yahoo! SG","al_locale":"en-SG"},{"id":"50","name":"Yahoo!
+        JP","al_locale":"ja-JP"},{"id":"51","name":"Yahoo! DE","al_locale":"de-DE"},{"id":"53","name":"Yahoo!
+        IN","al_locale":"en-IN"},{"id":"67","name":"Yahoo! TH","al_locale":"th-TH"},{"id":"70","name":"Yahoo!
+        IE","al_locale":"en-IE"},{"id":"78","name":"Yahoo! MX","al_locale":"es-MX"},{"id":"82","name":"Yahoo!
+        AR","al_locale":"es-AR"},{"id":"88","name":"Yahoo! ES","al_locale":"es-ES"},{"id":"43","name":"Bing
+        UK","al_locale":"en-UK"},{"id":"47","name":"Bing CA","al_locale":"en-CA"},{"id":"52","name":"Bing
+        DE","al_locale":"de-DE"},{"id":"54","name":"Bing SG","al_locale":"en-SG"},{"id":"55","name":"Bing
+        CN","al_locale":"zh-CN"},{"id":"56","name":"Bing HK","al_locale":"zh-HK-HK"},{"id":"57","name":"Bing
+        JP","al_locale":"ja-JP"},{"id":"58","name":"Bing IN","al_locale":"en-IN"},{"id":"60","name":"Bing
+        AU","al_locale":"en-AU"},{"id":"65","name":"Bing RO","al_locale":"ro-RO"},{"id":"68","name":"Bing
+        TH","al_locale":"th-TH"},{"id":"71","name":"Bing IE","al_locale":"en-IE"},{"id":"77","name":"Bing
+        MX","al_locale":"es-MX"},{"id":"87","name":"Bing ES","al_locale":"es-ES"},{"id":"91","name":"Bing
+        IT","al_locale":"it-IT"},{"id":"92","name":"Yahoo IT","al_locale":"it-IT"},{"id":"104","name":"Bing
+        SE","al_locale":"sv-SE"},{"id":"105","name":"Yahoo! SE","al_locale":"sv-SE"},{"id":"106","name":"Google
+        ID","al_locale":"id-ID"},{"id":"107","name":"Google ID (English)","al_locale":"en-ID"},{"id":"108","name":"Google
+        ID (Javanese)","al_locale":"jw-ID"},{"id":"109","name":"Google KR","al_locale":"ko-KR"},{"id":"110","name":"Google
+        SA","al_locale":"ar-SA"},{"id":"111","name":"Google SA (English)","al_locale":"en-SA"},{"id":"112","name":"Google
+        CL","al_locale":"es-CL"},{"id":"113","name":"Yahoo! ID (English)","al_locale":"en-ID"},{"id":"114","name":"Yahoo!
+        ID","al_locale":"id-ID"}]'
+    http_version: 
+  recorded_at: Wed, 19 Dec 2012 17:56:28 GMT
+recorded_with: VCR 2.3.0

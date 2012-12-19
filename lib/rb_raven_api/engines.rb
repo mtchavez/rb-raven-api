@@ -5,8 +5,7 @@ module Raven
     ##
     # Supported engines for Raven.
     #
-    # @return [Array] Supported engines.
-    # @note Currently getting redirected to login for this endpoint
+    # @return [Raven::Response] Response object with request results.
     #
 
     def self.all

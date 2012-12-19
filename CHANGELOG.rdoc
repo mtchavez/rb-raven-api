@@ -1,3 +1,10 @@
+== 0.0.3
+
+* Raven::Engines
+  * Specs added since no longer redirecting to login.
+* Raven::Competitors
+  * Raven::Competitors#for_domain
+
 == 0.0.2
 
 * Raven::Domain#info

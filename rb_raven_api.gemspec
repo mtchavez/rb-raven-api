@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name             = 'rb_raven_api'
-  s.version          = '0.0.2'
-  s.date             = '2012-12-11'
+  s.version          = '0.0.3'
+  s.date             = '2012-12-19'
   s.summary          = 'RavenTools API'
   s.description      = 'Wraps RavenTools API calls in a gem.'
   s.authors          = ['Chavez']
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.require_paths    = ['lib']
   s.homepage         = 'http://github.com/mtchavez/rb-raven-api'
   s.rdoc_options     = ['--charset=UTF-8 --main=README.md']
-  s.extra_rdoc_files = ['README.md']
+  s.extra_rdoc_files = ['README.md', 'CHANGELOG.rdoc']
 
   s.add_dependency(%q<rest-client>, ['>= 1.6.7'])
   s.add_dependency(%q<hashie>, ['>= 1.2.0'])

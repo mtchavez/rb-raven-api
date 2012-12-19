@@ -3,6 +3,7 @@ require 'rest-client'
 require 'net/http'
 require 'hashie'
 
+require File.dirname(__FILE__) + '/rb_raven_api/competitors'
 require File.dirname(__FILE__) + '/rb_raven_api/config'
 require File.dirname(__FILE__) + '/rb_raven_api/domain'
 require File.dirname(__FILE__) + '/rb_raven_api/engines'
