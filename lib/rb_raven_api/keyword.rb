@@ -9,8 +9,8 @@ module Raven
     # @param keyword [String] *Required* - The keyword you are adding.
     #
 
-    def self.add domain, keyword
-      Raven.http.get '', { method: 'add_keyword', domain: domain, keyword: keyword }
+    def self.add domain, keyword, cstm = {}
+      Raven.http.get '', { method: 'add_keyword', domain: domain, keyword: keyword }.merge(cstm)
     end
 
     ##
@@ -20,8 +20,8 @@ module Raven
     # @param keyword [String] *Required* - The keyword you are removing.
     #
 
-    def self.remove domain, keyword
-      Raven.http.get '', { method: 'remove_keyword', domain: domain, keyword: keyword }
+    def self.remove domain, keyword, cstm = {}
+      Raven.http.get '', { method: 'remove_keyword', domain: domain, keyword: keyword }.merge(cstm)
     end
 
   end

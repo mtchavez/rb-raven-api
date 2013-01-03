@@ -8,8 +8,8 @@ module Raven
     # @return [Raven::Response] Response object with request results.
     #
 
-    def self.all
-      Raven.http.get '', { method: 'engines' }
+    def self.all cstm = {}
+      Raven.http.get '', { method: 'engines' }.merge(cstm)
     end
 
   end

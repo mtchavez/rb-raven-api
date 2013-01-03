@@ -1,3 +1,7 @@
+== 0.0.5
+
+* Add cstm param option for API calls
+
 == 0.0.3
 
 * Raven::Engines

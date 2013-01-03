@@ -9,8 +9,8 @@ module Raven
     # @return [Raven::Response] Response object with request results.
     #
 
-    def self.for_domain domain
-      Raven.http.get '', { method: 'competitors', domain: domain }
+    def self.for_domain domain, cstm = {}
+      Raven.http.get '', { method: 'competitors', domain: domain }.merge(cstm)
     end
 
   end

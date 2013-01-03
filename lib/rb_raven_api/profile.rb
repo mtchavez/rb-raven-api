@@ -8,8 +8,8 @@ module Raven
     # @return [Hash] Hash of profile information.
     #
 
-    def self.info
-      Raven.http.get '', { method: 'profile_info' }
+    def self.info cstm = {}
+      Raven.http.get '', { method: 'profile_info' }.merge(cstm)
     end
 
   end
